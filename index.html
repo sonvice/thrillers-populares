@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie | Popular</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Dark Mode Switch -->
+    <div class="theme-switch-container">
+        <span id="toggle-icon-box" class="toggle-icon">
+            <span class="toggle-text">Light Mode</span>
+            <img class="sun" id="icon" src="images/icon/sun.svg">
+        </span>
+        <label class="theme-switch">
+            <input type="checkbox">
+            <div class="slide round"></div>
+        </label>
+    </div>
+    <!-- Nav -->
+    <nav class="navigation">
+        <a href="#" id="home">🥡CINE</a>
+    </nav>
+    <main class="main-content">
+            <!-- Grid -->
+        <h1 class="title-primary">🎬Lo más popular </h1>
+        <div class="content-btn">
+            <button class="btn peliculas active" id="peliculas">películas</button>
+            <button class="btn series" id="series">series</button>
+
+        </div>
+        <div class="main" id="main">
+            <ul class="list-peli" id="list-peli">
+
+            </ul>
+        </div>
+        <!-- Loader -->
+        <div class="loader" id="loader"></div>
+        <ul class="paginacion" id="paginacion">
+            
+        </ul>
+
+    </main>
+  
+    <script src="script.js"></script>
+</body>
+</html>
